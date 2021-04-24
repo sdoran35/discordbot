@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62224e9a-1415-4d25-b797-768644aa6106" name="Default Changelist" comment="Working on auto-scaling VCs">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" beforeDir="false" />
+    <list default="true" id="62224e9a-1415-4d25-b797-768644aa6106" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_4_2021_7_48_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_4_2021_7_48_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/moderation/addrole.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/moderation/addrole.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weaboo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Weaboo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/owner/createlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/owner/createlog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structures/Client.js" beforeDir="false" afterPath="$PROJECT_DIR$/structures/Client.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="release" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -99,6 +102,14 @@
       <workItem from="1617835518976" duration="3581000" />
       <workItem from="1617840027265" duration="164000" />
       <workItem from="1617840233727" duration="45000" />
+      <workItem from="1617840373247" duration="126000" />
+      <workItem from="1617841457077" duration="156000" />
+      <workItem from="1618095303580" duration="121000" />
+      <workItem from="1618618555147" duration="3177000" />
+      <workItem from="1618683340279" duration="20000" />
+      <workItem from="1618688962362" duration="3000" />
+      <workItem from="1618688976917" duration="2000" />
+      <workItem from="1619284878095" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="Updated commands with new throttling.">
       <created>1613779115501</created>
@@ -163,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617838241512</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fix ready event">
+      <created>1617840493700</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1617840493700</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +206,18 @@
     <MESSAGE value="fixed pkg.json" />
     <MESSAGE value="Added new createlog command" />
     <MESSAGE value="Working on auto-scaling VCs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on auto-scaling VCs" />
+    <MESSAGE value="Fix ready event" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix ready event" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/structures/Client.js</url>
+          <line>132</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

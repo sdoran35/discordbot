@@ -41,7 +41,7 @@ const client = new Client(config, {
     disableMentions: 'everyone',
     partials: ['GUILD_MEMBER'],
     ws: { intents: intents },
-    database: database,
+    database: database
 });
 
 // Initialize client

@@ -110,10 +110,6 @@ module.exports = class WeabooClient extends CommandoClient {
          * Weaboo's Log IDs
          */
 
-        /**
-         * Utility functions
-         * @type {Object}
-         */
         this.utils = require('../util/Util');
         this.errorMessage = errorMessage;
         this.auditMessage = auditMessage;
@@ -127,13 +123,20 @@ module.exports = class WeabooClient extends CommandoClient {
         this.games = new Discord.Collection();
         this.activities = activities;
         this.leaveMessages = leaveMsgs;
-        this.botLogger = this.channels.fetch(config.logs.BOT_LOG);
-        this.webhook = new Discord.WebhookClient(
-            config.discord.DISCORD_WEBHOOK_ID,
-            config.discord.DISCORD_WEBHOOK_TOKEN,
-            {disableMentions: 'everyone'}
-        );
+        this.botLogger = this.fetchBotLog();
+        this.webhook = this.createWebhook();
 
+    }
+
+
+    async createWebhook() {
+        const whID = await options.database.findOne('webhooks',this.guild.id);
+        return new Discord.WebhookClient(whID.document.webhook_id,whID.document.webhook_name);
+    }
+
+    async fetchBotLog() {
+        const logID = await options.database.findOne('logs',this.guild.id);
+        return await this.channels.fetch(logID.document.log_channel_id);
     }
 
     /**

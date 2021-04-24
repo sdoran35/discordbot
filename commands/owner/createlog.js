@@ -28,11 +28,13 @@ module.exports = class CreateLogCommand extends Command {
 
        const newChannel = await msg.guild.channels.create(log_name);
        msg.client.botLogger = newChannel;
+       const guildID = msg.channel.guild.id;
        await DB.createDocument('logs', {
-           'id': 'weabooLog',
+           'id': guildID,
            'log_name': log_name,
            'log_channel_id': newChannel.id
        }, false);
+
        const hookName = 'LogHook';
         newChannel.createWebhook(hookName, {
             avatar: msg.client.user.displayAvatarURL({ format: 'png' }),
@@ -47,7 +49,7 @@ module.exports = class CreateLogCommand extends Command {
 
                 DB.createDocument('webhooks',
                     {
-                        'id':'weabooWebhook',
+                        'id': guildID,
                         'webhook_id': res.id,
                         'webhook_name': hookName,
                         'webhook_token': res.token
